@@ -8,7 +8,6 @@ import Movies from "../assets/images/movie-icon.svg";
 import Series from "../assets/images/series-icon.svg";
 import Swal from "sweetalert2";
 
-
 const Header = () => {
   const alertUser = () => {
     Swal.fire({
@@ -20,10 +19,12 @@ const Header = () => {
   return (
     <Container>
       <Logo>
-        <img src={Image} alt="" />
+        <a href="/">
+          <img src={Image} alt="" />
+        </a>
       </Logo>
       <NavMenu>
-        <a href="/home">
+        <a href="/">
           <img src={Home} alt="" />
           <span>Home</span>
         </a>
@@ -49,7 +50,7 @@ const Header = () => {
         </a>
       </NavMenu>
       <a href="/login">
-      <Login>Login</Login>
+        <Login>Login</Login>
       </a>
     </Container>
   );
@@ -70,7 +71,7 @@ const Container = styled.div`
 
   padding: 0px 36px;
   z-index: 999;
-  a{
+  a {
     text-decoration: none;
   }
 `;
