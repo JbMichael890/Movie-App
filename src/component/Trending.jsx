@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Trending = () => {
   return (
     <Container>
-      <h4>Originals</h4>
+      <h4>Trending</h4>
       <Content>
         {Data.map(
           (myData, i) =>
